@@ -26,8 +26,6 @@ async function run() {
 		const orderCollection = database.collection('orders');
 		const usersCollection = database.collection('users');
 
-		console.log('database connected successfully');
-
 		// Order POST API
 		app.post('/orders', async (req, res) => {
 			const order = req.body;
